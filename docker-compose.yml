@@ -1,0 +1,10 @@
+version: '3.0'
+
+services:
+  distributed-systems-challenge-app:
+    container_name: distributed-systems-challenge-app
+    restart: on-failure
+    image: caching-systems-service
+    build: .
+    ports:
+      - "4040:4040"

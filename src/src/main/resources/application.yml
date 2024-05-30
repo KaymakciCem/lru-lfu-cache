@@ -1,0 +1,15 @@
+server:
+  port: 4040
+
+cache:
+  maxSize: 4
+  strategy: "LRU"
+
+management:
+  endpoints:
+    jmx:
+      exposure:
+        include:*
+    web:
+        exposure:
+            include: health,info,prometheus,metrics
